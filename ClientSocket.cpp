@@ -63,23 +63,22 @@ void CClientSocket::OnReceive(int nErrorCode)
 	{
 	case MSGTYPE_LOGIN_RESULT:
 		{
-			//LoginMsgRet msg;
-			MyLoginResult loginResult;
+			//这里有内存泄露问题、未处理loginResult的释放问题，暂缓考虑
+			MyLoginResult *loginResult = new MyLoginResult;
 
 			//msg.DeCode(recvBuff, len);
-			loginResult.DeCode(recvBuff, len);
+			loginResult->DeCode(recvBuff, len);
 
-			if (loginResult.GetLoginResult() == 1)
+			if (loginResult->GetLoginResult() == 1)
 			{
 				//向窗口发送自定义消息
-				::SendMessage(::AfxGetMainWnd()->m_hWnd, WM_LoginMessage, 0, 1);
+				::SendMessage(::AfxGetMainWnd()->m_hWnd, WM_LoginMessage, (WPARAM)loginResult, 1);
 			}
 			else
 			{
 				::SendMessage(::AfxGetMainWnd()->m_hWnd, WM_LoginMessage, 0, -1);
 				//向窗口发送自定义消息
 			}
-			//::SendMessage(::AfxGetMainWnd()->m_hWnd, WM_ReceiveUserInfo, 0, (LPARAM)&loginResult);
 		}
 		break;
 	}

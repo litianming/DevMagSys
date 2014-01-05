@@ -79,9 +79,11 @@ BOOL CDeviceManageSystemApp::InitInstance()
 	{
 		if(dlg.GetLoginRet() == 1)
 		{
-			CDeviceManageSystemDlg dlg;
-			m_pMainWnd = &dlg;
-			INT_PTR nResponse = dlg.DoModal();
+			CDeviceManageSystemDlg dmsdlg;
+			m_pMainWnd = &dmsdlg;
+			dmsdlg.SetLoginResult(dlg.GetLoginResult());
+			INT_PTR nResponse = dmsdlg.DoModal();
+			
 		}
 	}
 	// 由于对话框已关闭，所以将返回 FALSE 以便退出应用程序，

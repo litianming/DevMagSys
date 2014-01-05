@@ -7,6 +7,7 @@
 #include "RecvUserInfo.h"
 #include "ChangePasswd.h"
 #include "UserInfoMage.h"
+#include "MyLoginResult.h"
 // CDeviceManageSystemDlg ¶Ô»°¿ò
 class CDeviceManageSystemDlg : public CDialog
 {
@@ -42,7 +43,9 @@ public:
 	CRecvUserInfo m_UserInfo;
 	CChangePasswd m_ChangePwd;
 	CUserInfoMage m_UserInfoManage;
+	MyLoginResult *m_LoginResult;
 
+	void SetLoginResult(MyLoginResult *loginresult);
 
 	afx_msg void OnNMDblclkTree1(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnTcnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult);

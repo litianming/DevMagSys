@@ -2,6 +2,7 @@
 
 #include "SetingAddrPort.h"
 #include "SavePasswd.h"
+#include "MyLoginResult.h"
 // MyDialog ¶Ô»°¿ò
 
 
@@ -26,8 +27,11 @@ public:
 	BOOL OnInitDialog();
 private:
 	int m_LoginRet;
+
+	MyLoginResult *m_loginResult;
 public:
 	int GetLoginRet();
+	MyLoginResult *GetLoginResult();
 private:
 	CString m_passwd;
 	CString m_username;

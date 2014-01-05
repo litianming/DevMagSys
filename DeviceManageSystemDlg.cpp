@@ -287,6 +287,7 @@ void CDeviceManageSystemDlg::OnNMDblclkTree1(NMHDR *pNMHDR, LRESULT *pResult)
 			if (0 == strcmp(pData->m_ChildStr[0], "基本资料"))
 			{
 				m_UserInfo.MoveWindow(&rc);
+				m_UserInfo.SetValues(m_LoginResult);
 				m_UserInfo.ShowWindow(SW_SHOWNA);
 			}
 			else
@@ -296,6 +297,7 @@ void CDeviceManageSystemDlg::OnNMDblclkTree1(NMHDR *pNMHDR, LRESULT *pResult)
 			if (0 == strcmp(pData->m_ChildStr[0], "修改密码"))
 			{
 				m_ChangePwd.MoveWindow(&rc);
+				m_ChangePwd.SetOriginPasswd(m_LoginResult->GetPasswdPoint());
 				m_ChangePwd.ShowWindow(SW_SHOWNA);
 			}
 			else
@@ -334,4 +336,10 @@ void CDeviceManageSystemDlg::OnTcnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult)
 	//	break;
 	//}
 	//*pResult = 0;
+}
+
+
+void CDeviceManageSystemDlg::SetLoginResult(MyLoginResult *loginresult)
+{
+	m_LoginResult = loginresult;
 }

@@ -2,6 +2,7 @@
 
 
 // CRecvUserInfo 对话框
+#include "MyLoginResult.h"
 
 class CRecvUserInfo : public CDialogEx
 {
@@ -18,9 +19,8 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 	DECLARE_MESSAGE_MAP()
-
-
-	afx_msg LRESULT SetValues(WPARAM wParam, LPARAM lParam);
+public:
+	void SetValues(MyLoginResult *loginresult);
 public:
 	CString m_UserName;
 	CString m_Passwd;

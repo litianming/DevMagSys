@@ -55,22 +55,18 @@ END_MESSAGE_MAP()
 
 
 // CRecvUserInfo 消息处理程序
-afx_msg LRESULT CRecvUserInfo::SetValues(WPARAM wParam, LPARAM lParam)
+void CRecvUserInfo::SetValues(MyLoginResult *loginresult)
 {
-	MyLoginResult *loginresult = (MyLoginResult*)lParam;
-	
-	//m_UserName.Format("%s", loginresult->GetUserNamePoint());
-	//m_Passwd.Format("%s", loginresult->GetPasswdPoint());
-	//m_LoginAccount.Format("%s", loginresult->GetLoginAccountPoint());
-	//m_UserID.Format("%s", loginresult->GetUserIDPoint());
-	//m_Department.Format("%s", loginresult->GetDepartmentPoint());
-	//m_Role.Format("%s", loginresult->GetRolePoint());
-	//m_Position.Format("%s", loginresult->GetPositionPoint());
-	//m_JobState.Format("%s", loginresult->GetJobStatePoint());
-	//m_Email.Format("%s", loginresult->GetEmailPoint());
-	//m_WetherLogin.Format("%s", loginresult->GetWetherLoginPoint());
-	//m_Sex.Format("%s", loginresult->GetSexPoint());
-	//UpdateData(FALSE);
-
-	return 0;
+	m_UserName.Format("%s", loginresult->GetUserNamePoint());
+	m_Passwd.Format("%s", loginresult->GetPasswdPoint());
+	m_LoginAccount.Format("%s", loginresult->GetLoginAccountPoint());
+	m_UserID.Format("%s", loginresult->GetUserIDPoint());
+	m_Department.Format("%s", loginresult->GetDepartmentPoint());
+	m_Role.Format("%s", loginresult->GetRolePoint());
+	m_Position.Format("%s", loginresult->GetPositionPoint());
+	m_JobState.Format("%s", loginresult->GetJobStatePoint());
+	m_Email.Format("%s", loginresult->GetEmailPoint());
+	m_WetherLogin.Format("%s", loginresult->GetWetherLoginPoint());
+	m_Sex.Format("%s", loginresult->GetSexPoint());
+	UpdateData(FALSE);
 }

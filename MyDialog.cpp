@@ -87,12 +87,14 @@ LRESULT MyDialog::OnLoginMessage(WPARAM wParam, LPARAM lParam)
 	//添加自己的消息处理
 	if ((int)lParam == 1)
 	{
+		m_loginResult = (MyLoginResult*)wParam;
 		AfxMessageBox("登陆成功");
 		m_LoginRet = 1;
 		OnOK();
 	}
 	else
 	{
+		m_loginResult = 0x0;
 		AfxMessageBox("登陆失败");
 		m_LoginRet = -1;
 	}
@@ -185,4 +187,9 @@ void MyDialog::OnPaint()
 	dc.SelectObject(pOldBrush);
 	// TODO: 在此处添加消息处理程序代码
 	// 不为绘图消息调用 CDialog::OnPaint()
+}
+
+MyLoginResult *MyDialog::GetLoginResult()
+{
+	return m_loginResult;
 }
