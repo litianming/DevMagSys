@@ -1,0 +1,24 @@
+﻿生成启动时间为 2013/12/23 10:23:38。
+     1>项目“D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\DeviceManageSystem\DeviceManageSystem.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\DeviceManageSystem.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt MyDialog.cpp
+         MyDialog.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\x64\Release\DeviceManageSystem.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\x64\Release\DeviceManageSystem.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\x64\Release\DeviceManageSystem.lib" /MACHINE:X64 x64\Release\DeviceManageSystem.res
+         x64\Release\ClientSocket.obj
+         x64\Release\DeviceManageSystem.obj
+         x64\Release\DeviceManageSystemDlg.obj
+         x64\Release\DlgTab1.obj
+         x64\Release\DlgTab2.obj
+         x64\Release\MyDialog.obj
+         x64\Release\MyLogin.obj
+         x64\Release\MySocket.obj
+         x64\Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+         DeviceManageSystem.vcxproj -> D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\x64\Release\DeviceManageSystem.exe
+     1>已完成生成项目“D:\Documents\Visual Studio 2008\Projects\DeviceManageSystem\DeviceManageSystem\DeviceManageSystem.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.96

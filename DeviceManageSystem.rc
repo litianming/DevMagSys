@@ -1,0 +1,329 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\DeviceManageSystem.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 DeviceManageSystem"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,14,14,21,20
+    LTEXT           "DeviceManageSystem，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DEVICEMANAGESYSTEM_DIALOG DIALOGEX 0, 0, 515, 349
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DeviceManageSystem"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_NOHSCROLL | WS_BORDER | WS_TABSTOP,7,7,81,335
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,104,7,392,335
+END
+
+IDD_DLG_LOGIN DIALOGEX 0, 0, 243, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登    陆",IDOK,81,112,43,19
+    PUSHBUTTON      "取    消",IDCANCEL,144,112,43,19
+    EDITTEXT        IDC_EDIT1,81,30,116,17,ES_AUTOHSCROLL,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,81,58,116,17,ES_PASSWORD | ES_AUTOHSCROLL,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    LTEXT           "用户名",IDC_STATIC,43,30,36,17,SS_NOPREFIX | SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "密    码",IDC_STATIC,43,58,36,17,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CONTROL         "记住密码",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,81,88,48,10,WS_EX_TRANSPARENT
+    CONTROL         "自动登陆",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,88,48,10
+    PUSHBUTTON      "设置",IDC_BUTTON_SETING,217,7,19,14
+END
+
+IDD_DLG_USERINFO DIALOGEX 0, 0, 450, 270
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "用户密码：",IDC_STATIC,19,34,43,12
+    EDITTEXT        IDC_EDIT1,69,34,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "登陆账号：",IDC_STATIC,18,57,44,12
+    EDITTEXT        IDC_EDIT2,69,103,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "所属部门：",IDC_STATIC,7,103,55,12
+    EDITTEXT        IDC_EDIT3,69,80,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "所属角色：",IDC_STATIC,16,126,46,12
+    EDITTEXT        IDC_EDIT6,69,126,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "用户编号：",IDC_STATIC,18,80,44,12
+    EDITTEXT        IDC_EDIT7,69,57,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "职位：",IDC_STATIC,27,149,35,12
+    EDITTEXT        IDC_EDIT8,69,149,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "在岗状态：",IDC_STATIC,20,172,42,12
+    EDITTEXT        IDC_EDIT9,69,172,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Email地址：",IDC_STATIC,15,195,47,12
+    EDITTEXT        IDC_EDIT10,69,195,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "允许登陆：",IDC_STATIC,18,218,44,12
+    EDITTEXT        IDC_EDIT11,69,218,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "性别：",IDC_STATIC,27,241,35,12
+    EDITTEXT        IDC_EDIT12,69,241,356,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "用户名：",IDC_STATIC,27,11,35,12
+    EDITTEXT        IDC_EDIT4,69,11,356,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DLG_CHANGEPASSWD DIALOGEX 0, 0, 391, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "原密码：",IDC_STATIC,27,22,32,11
+    RTEXT           "新密码：",IDC_STATIC,27,43,32,11
+    RTEXT           "新密码：",IDC_STATIC,27,64,32,11
+    EDITTEXT        IDC_EDIT1,80,22,270,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,80,64,270,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,80,43,270,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,243,93,42,17
+    PUSHBUTTON      "取消",IDC_BUTTON2,308,93,42,17
+END
+
+IDD_DIALOG_SETING DIALOGEX 0, 0, 207, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Seting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IP地址",IDC_STATIC,28,23,23,15
+    LTEXT           "端口",IDC_STATIC,28,46,23,15
+    EDITTEXT        IDC_EDIT_PORT,61,46,41,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    PUSHBUTTON      "确    定",IDC_BUTTON1,114,75,47,15
+    CONTROL         "",IDC_IPADDRESS_ADDRESS,"SysIPAddress32",WS_TABSTOP,61,20,100,14
+    PUSHBUTTON      "重置",IDC_BUTTON2,172,20,28,14
+END
+
+IDD_DLG_UserInfoManage DIALOGEX 0, 0, 455, 350
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,347,325,40,18
+    PUSHBUTTON      "取消",IDCANCEL,408,325,40,18
+    CONTROL         "",IDC_LIST7,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,441,303
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DeviceManageSystem.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "DeviceManageSystem.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DEVICEMANAGESYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 508
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 342
+    END
+
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DLG_USERINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_DLG_CHANGEPASSWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_DIALOG_SETING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DLG_UserInfoManage, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGIN        BITMAP                  "res\\login.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON                    "res\\Main.ico"
+IDI_ICON_PLUS           ICON                    "res\\plus.ico"
+IDI_ICON_BRIEFCASE      ICON                    "res\\briefcase.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 DeviceManageSystem(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\DeviceManageSystem.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
